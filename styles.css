@@ -22,7 +22,7 @@ html {
   width: 949px;
   height: 180px;
   padding-left: 2px;
-  border-radius: 0 0 3px 3px;
+  overflow: hidden;
 }
 
 .key {
@@ -32,6 +32,7 @@ html {
   position: relative;
   float: left;
   margin: 2px;
+  border-radius: 0 0 3px 3px;
 }
 
 .key.black-key::after {
@@ -47,4 +48,29 @@ html {
   width: 200px;
   position: absolute;
   top: 23px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem;
+  }
+  #piano {
+    width: 358px;
+  }
+  .keys {
+    width: 318px;
+  }
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  #piano {
+    width: 675px;
+  }
+  .keys {
+    width: 633px;
+  }
 }
